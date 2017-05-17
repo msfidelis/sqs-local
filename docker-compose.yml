@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  dynamodb:
+    build: . 
+    #image: msfidelis/dynamodb
+    volumes:
+      - ./database:/database
+    ports:
+      - "9324:9324"
